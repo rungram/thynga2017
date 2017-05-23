@@ -23,11 +23,11 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' )
                         <table class="frmContact">
                             <tbody><tr>
                                 <td style="width: 60px">Họ tên:</td>
-                                <td style="width: 250px"><input class="txt require" type="text" name="ten" value=""> </td>
+                                <td style="width: 250px"><input class="txt require" type="text" name="ten" value="" required> </td>
                             </tr>
                             <tr>
                                 <td>Điện thoại:</td>
-                                <td><input class="txt require" type="text" name="dienthoai" value=""> </td>
+                                <td><input class="txt require" type="text" name="dienthoai" value="" required> </td>
                             </tr>
                             <tr>
                                 <td>Email:</td>
@@ -39,7 +39,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' )
                             </tr>
                             <tr>
                                 <td>Tiêu đề:</td>
-                                <td><input class="txt require" type="text" name="subject" value=""> </td>
+                                <td><input class="txt require" type="text" name="subject" value="" required> </td>
                             </tr>
                             
                             <tr>
