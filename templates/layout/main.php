@@ -6,7 +6,7 @@
 	$qc_slide=$d->result_array();
 	
 	$d->reset();
-	$sql_tungdanhmuc="select * from #_product where hienthi =1 order by stt desc limit 0,5";
+	$sql_tungdanhmuc="select * from #_product where hienthi =1 order by stt asc limit 0,5";
 	$d->query($sql_tungdanhmuc);
 	$result_spnam=$d->result_array();
 	
