@@ -39,18 +39,6 @@
             <div class="thy-row">
                 <div class="col-12">
                     <ul id="top-social">
-                        <li><a href="#"><img src="images/skype.jpg" alt="skype"/></a></li>
-                        <li><a href="#"><img src="images/yahoo.jpg" alt="yahoo"/></a></li>
-                        <li><a href="#"><img src="images/facebook.jpg" alt="facebook"/></a></li>
-                        <li><a href="#"><img src="images/google-plus.jpg" alt="google plus"/></a></li>
-                        <li class="text">Hotline tư vấn Ms. Nga <span class="highlight highlight-1">0909 333 999</span></li>
-                    </ul>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="thy-row">
-                <div class="col-12">
-                    <ul id="top-social">
                     <?php
                 	 if(!$_SESSION['user_dn'])
                 	 {
@@ -75,6 +63,19 @@
                 </div>
                 <div class="clearfix"></div>
             </div>
+            <div class="thy-row">
+                <div class="col-12">
+                    <ul id="top-social">
+                        <li><a href="#"><img src="images/skype.jpg" alt="skype"/></a></li>
+                        <li><a href="#"><img src="images/yahoo.jpg" alt="yahoo"/></a></li>
+                        <li><a href="#"><img src="images/facebook.jpg" alt="facebook"/></a></li>
+                        <li><a href="#"><img src="images/google-plus.jpg" alt="google plus"/></a></li>
+                        <li class="text">Hotline tư vấn Ms. Nga <span class="highlight highlight-1">0909 333 999</span></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            
             <div class="thy-row">
                 <div class="center external col-4">
                     <ul id="per-slide-template"></ul>

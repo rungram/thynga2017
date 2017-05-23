@@ -7,7 +7,7 @@
 ?>
 
 <ul id="top-menu" class="thy-menu sf-menu">
-    <li class="active"><a href="#">Trang chủ</a></li>
+    <li class="active"><a href="index.html">Trang chủ</a></li>
     <li><a href="gioi-thieu.html">Giới thiệu</a></li>
     <?php for($i=0,$count_l=count($list);$i<$count_l;$i++){
 		$d->reset();
