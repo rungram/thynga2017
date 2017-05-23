@@ -1,0 +1,20 @@
+.col{
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.col_(@a){
+  .col;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: percentage(@a/12);
+}
+
+.col__(@i) when (@i > 0) {
+  .col-@{i}{
+    .col_(@i);
+  }
+  .col__(@i - 1);
+}

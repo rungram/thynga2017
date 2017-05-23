@@ -1,0 +1,26 @@
+/* --------------------- Phan trang ------------------*/
+.paging{
+	text-align:left;
+	margin:10px;
+	font-size:14px;
+}
+.paging a:link, .paging a:visited, .paging a:hover, .paging a:active{
+	border:1px solid #333;
+	color:#fff;
+	background-color:#666666;
+	padding:0px 5px;
+	font-weight:bold;
+	text-decoration:none;
+}
+.paging a:hover{
+	background-color:#fff;
+	color:#2A9FE2;
+}
+.clear{
+		clear:both;
+	}
+.menu_top{
+	float:left;
+	width:50%;
+	
+}

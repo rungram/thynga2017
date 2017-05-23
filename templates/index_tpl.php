@@ -1,0 +1,1 @@
+  <?php include _template."layout/main.php"; ?>
