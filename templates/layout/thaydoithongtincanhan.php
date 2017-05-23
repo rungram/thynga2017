@@ -61,15 +61,14 @@
                 
 
                 <div class="remember">
-                    <ul>
+                    <ul style="list-style:none;">
                         <li><input type="checkbox" name="dongy" id="dongy" checked="checked"><span>Tôi đã xem và đồng ý với quy chế của website này</span></li>
                         <span class="error" id="dongy_error" style="color='#FF0000'"></span>
                     </ul>
                 </div>
                 <div class="form_button">
-                    <ul>
+                    <ul style="list-style:none;">
                         <li><button id="btnRegister" name="dangky" type="submit" class="btn" value="Cập nhật"><span>Cập nhật</span></button></li>
-                        <li><a href="dang-nhap.html">Bạn có khoản?</a></li>
                     </ul>
                 </div>
             </form>

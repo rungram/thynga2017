@@ -44,7 +44,33 @@
                         <li><a href="#"><img src="images/facebook.jpg" alt="facebook"/></a></li>
                         <li><a href="#"><img src="images/google-plus.jpg" alt="google plus"/></a></li>
                         <li class="text">Hotline tư vấn Ms. Nga <span class="highlight highlight-1">0909 333 999</span></li>
-                        <li><a class="dangtaisan" href="gio-hang.html" title="Giỏ hàng">Giỏ hàng của bạn</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="thy-row">
+                <div class="col-12">
+                    <ul id="top-social">
+                    <?php
+                	 if(!$_SESSION['user_dn'])
+                	 {
+                	 ?>
+                    <li><a class="dangnhap" href="dang-nhap.html" title="Đăng nhập">Đăng nhập</a></li>
+                	<li><a class="dangky" href="dang-ky.html" title="Đăng ký">Đăng ký</a></li>
+                	<?php
+                	 }
+                	 else
+                	  {
+                		 ?>
+                         <li><a class="dangtaisan" href="quan-ly-tai-khoan.html" title="Quản lý tài khoản">Quản lý tài khoản</a></li>
+                         <li>Xin chào : <?=$_SESSION['user_dn']?></li>
+                         <li><a href="thoat.html"><b>Thoát</b></a></li>
+                         
+                		
+                     	<?php
+                	 }
+                	 ?>
+                     <li><a class="dangtaisan" href="gio-hang.html" title="Giỏ hàng">Giỏ hàng của bạn</a></li>
                     </ul>
                 </div>
                 <div class="clearfix"></div>

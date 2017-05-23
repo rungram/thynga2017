@@ -356,8 +356,9 @@ function CheckSignup()
 	}
 			
 </script>
-<div class="container-fluid">
-<div class="mod-content" style="margin-top:150px;">
+<div class="bg-white">
+    <div class="clearfix"></div>
+    <div class="col-12" id="san-pham">
         
 <div class="box_mid">
   <div class="mid-title">
@@ -430,15 +431,15 @@ function CheckSignup()
                 
 
                 <div class="remember">
-                    <ul>
+                    <ul style="list-style:none;">
                         <li><input type="checkbox" name="dongy" id="dongy" checked="checked"><span>Tôi đã xem và đồng ý với quy chế của website này</span></li>
                         <span class="error" id="dongy_error" style="color='#FF0000'"></span>
                     </ul>
                 </div>
                 <div class="form_button">
-                    <ul>
+                    <ul style="list-style:none;">
                         <li><button id="btnRegister" name="dangky" type="submit" class="btn" value="Đăng ký"><span>Đăng ký</span></button></li>
-                        <li><a href="dang-nhap.html">Bạn có khoản?</a></li>
+                        <li><a href="dang-nhap.html">Bạn có tài khoản?</a></li>
                     </ul>
                 </div>
             </form>
@@ -451,6 +452,8 @@ function CheckSignup()
 
   </div>          
 </div> 
-
+ <div class="clearfix"></div>
     </div>
+    <div class="clearfix"></div>
 </div>
+<br/>

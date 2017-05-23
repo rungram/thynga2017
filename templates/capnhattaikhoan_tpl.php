@@ -419,8 +419,9 @@ function CheckSignup()
 }
 
 </style>
-<div class="container-fluid">
-<div class="mod-content" style="margin-top:150px;">
+<div class="bg-white">
+    <div class="clearfix"></div>
+    <div class="col-12" id="san-pham">
         
 <div class="box_mid">
   <div class="mid-title">
@@ -445,23 +446,23 @@ function CheckSignup()
             </div>
             
             
-            <div class="fhd-cright col-xs-12 col-sm-3">   <div class="fhd-cl-i"><div class="fhd-tits"><h2 class="fhd-titsh">MENU QUẢN LÝ THÔNG TIN</h2></div>
-            <div class="fhd-cl-list">
+            <div class="fhd-cright col-xs-12 col-sm-3" style="width: 35%;">   <div class="fhd-cl-i"><div class="fhd-tits"><h2 class="fhd-titsh">MENU QUẢN LÝ THÔNG TIN</h2></div>
+            <div class="fhd-tits">
             
-            <ul class="fhd-cl-lprod mau_nen">
+            <ul style="list-style:none;" class="fhd-cl-lprod mau_nen">
                
                  <li>
-                <a class="fhd-cl-lname" href="quan-ly-don-hang.html" title="iPhone 7">Quản lý đơn hàng</a>
+                <a class="fhd-cl-lname" href="quan-ly-don-hang.html" title="Quản lý đơn hàng">Quản lý đơn hàng</a>
                 </li>
                  <li>
-                <a class="fhd-cl-lname" href="gio-hang.html" title="iPhone 7" target="_blank">Giỏ hàng của bạn</a>
+                <a class="fhd-cl-lname" href="gio-hang.html" title="Giỏ hàng của bạn" target="_blank">Giỏ hàng của bạn</a>
                 </li>
                  <li>
-                <a class="fhd-cl-lname" href="thay-doi-thong-tin-ca-nhan.html" title="iPhone 7">Thay đổi thông tin cá nhân</a>
+                <a class="fhd-cl-lname" href="thay-doi-thong-tin-ca-nhan.html" title="Thay đổi thông tin cá nhân">Thay đổi thông tin cá nhân</a>
                 </li>
                
                 <li>
-                <a class="fhd-cl-lname" href="thoat.html" title="iPhone 7">Thoát</a>
+                <a class="fhd-cl-lname" href="thoat.html" title="Thoát">Thoát</a>
                 </li>
                  
                 
@@ -469,13 +470,15 @@ function CheckSignup()
             </div>
             </div>    
             
-            
+            <div class="clearfix"></div>
               </div></div>
 
   		</div>  
   		<!--chinh -->
           
-</div> 
-
+</div>  
+ <div class="clearfix"></div>
     </div>
+    <div class="clearfix"></div>
 </div>
+<br/>

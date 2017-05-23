@@ -215,8 +215,9 @@ if(isset($_POST["user_dn"])&&isset($_POST["pass"]))
 }
 
 ?>
-<div class="container-fluid">
-<div class="box_mid" style="margin-top:150px;">
+<div class="bg-white">
+    <div class="clearfix"></div>
+    <div class="col-12" id="san-pham">
   <div class="mid-title">
     <div class="titleL"><h1>Đăng Nhập <span class="small">hoặc</span> <span class="color"><a href="dang-ky.html">Đăng ký thành viên</a></span></h1></div>
     <div class="titleR"></div>
@@ -254,15 +255,15 @@ if(isset($_POST["user_dn"])&&isset($_POST["pass"]))
                          <span class="error" id="passdn_error" style="color='#FF0000'"></span>
 					</div>
 					<div class="remember">
-						<ul>
+						<ul style="list-style:none;">
 							<li><input type="checkbox" name="check_remember" id="check_remember"><span>Ghi nhớ</span></li>
 							<li><a href="quen-mat-khau.html" class="forget_pass" title="Bạn quên mật khẩu?" target="_top">Bạn quên mật khẩu?</a></li>
 						</ul>
 					</div>
 					<div class="form_button">
-						<ul>
-							<li><button id="dnhap" name="dnhap" type="submit" class="btn" value="Đăng nhập"><span>Đăng nhập</span></button></li>
-							<li><a href="dang-ky.html">Bạn chưa có tài khoản?</a></li>
+						<ul style="list-style:none;">
+							<li ><button id="dnhap" name="dnhap" type="submit" class="btn" value="Đăng nhập"><span>Đăng nhập</span></button></li>
+							<li ><a href="dang-ky.html">Bạn chưa có tài khoản?</a></li>
 						</ul>
 					</div>
 				</form>
@@ -278,6 +279,8 @@ if(isset($_POST["user_dn"])&&isset($_POST["pass"]))
  
 
   </div>          
+<div class="clearfix"></div>
+    </div>
+    <div class="clearfix"></div>
 </div>
-
-</div>
+<br/>
