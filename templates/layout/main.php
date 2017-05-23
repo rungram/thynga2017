@@ -102,7 +102,7 @@
                         <h3 class="box-title">
                             Sản phẩm nổi bật
                             <div class="float-right">
-                                <a href="#" class="read-all">
+                                <a href="danh-muc/san-pham-duong-toc-30.html" class="read-all">
                                     Tất cả sản phẩm
                                 </a>
                             </div>

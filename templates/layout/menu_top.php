@@ -1,7 +1,7 @@
 <?php
 	
 	$d->reset();
-	$sql_list ="select *  from #_product_list order by stt asc limit 0,5";
+	$sql_list ="select *  from #_product_list where hienthi=1 order by stt asc limit 0,5";
 	$d->query($sql_list);
 	$list =$d->result_array();
 ?>

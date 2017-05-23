@@ -18,12 +18,12 @@
 <div class="bg-gray">
             <div class="thy-row" id="header">
                 <div id="logo" class="col">
-                    <a href="#">
+                    <a href="index.html">
                         <img src="images/logo.png" alt="logo thynga"/>
                     </a>
                 </div>
                 <div id="banner" class="col">
-                    <a href="#">
+                    <a href="index.html">
                         <img class="img-responsive" src="images/banner.jpg" alt=""/>
                     </a>
                 </div>
@@ -58,7 +58,7 @@
                      	<?php
                 	 }
                 	 ?>
-                     <li><a class="dangtaisan" href="gio-hang.html" title="Giỏ hàng">Giỏ hàng của bạn</a></li>
+                     <li><a class="dangtaisan" href="gio-hang.html" title="Giỏ hàng">Giỏ hàng</a></li>
                     </ul>
                 </div>
                 <div class="clearfix"></div>
