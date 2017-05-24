@@ -64,7 +64,6 @@ table,td,tr,th{
 <script>
 
 	$(document).ready(function(e) {
-
 		$(".del_order").click(function() {
 
 				var data_id = {

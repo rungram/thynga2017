@@ -47,6 +47,7 @@
     <link rel="stylesheet" href="css/owl.carousel.css"/>
     <link rel="stylesheet" href="css/slicknav.css"/>
     <link rel="stylesheet" href="css/main.css"/>
+    <script src="js/jquery1.js" type="text/javascript"></script>
     <script data-main="js/app.js" src="js/require.js"></script>
     <title>Thy Nga</title>
     <script language="javascript" type="text/javascript">

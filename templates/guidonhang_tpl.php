@@ -124,51 +124,14 @@
 				  <td align="center" width="5%">STT</td>
 				  <td align="center">Mã sản phẩm</td>
 				  <td align="center">Sản phẩm</td>
-				  <td align="center">Size</td>
-				  <td align="center">Màu</td>
+				  <td align="center">Hình ảnh</td>
 				  <td align="center">Đơn Giá</td>
 			
 				  <td align="center">Số lượng</td>
 				  <td align="center">Thành Tiền</td>
 				</tr>';
 		
-   			for($i=0;$i<$max;$i++)
-				{
-					
-					$id_sp=$_SESSION['cart'][$i]['productid'];
-					$soluong=$_SESSION['cart'][$i]['qty'];					
-					$tenmathang=get_product_name($id_sp);
-					$hinhmathang=get_hinh($id_sp);
-					$pmota=get_mota($id_sp);
-					$pkodau=get_kodau($id_sp);
-					$psale=get_giagiam($id_sp);
-					$pma=get_masp($id_sp);
-					$size= $_SESSION['size'.$id_sp];
-			        $mau= $_SESSION['mau'.$id_sp];
-					if($psale ==0) 
-					$giamathang=get_price($id_sp);
-					else 
-					$giamathang=get_giagiam($id_sp);
-					$j=$i+1;
-			$body .='<tr>
-						<td align="center" width="5%">'.$j.'</td>
-					
-						<td align="center">'.$pma.'</td>
-						<td align="center">'.$tenmathang.'</td>
-						<td align="center">'.$size.'</td>
-						<td align="center">'.$mau.'</td>
-						<td align="center">'. number_format ($giamathang,0,",",".").' VNĐ</td>
-						
-						<td align="center">'.$soluong.'</td>
-						<td align="center">'. number_format(($soluong*$giamathang),0,",",".").' VNĐ</td>
-						</tr>';
-					
-				}
-				
-			$body .= '</table>';
-				
-				
-			
+   			
 			 //add vo mail	
 
                 include_once "phpmailer/class.phpmailer.php";  
@@ -191,7 +154,44 @@
                 $mail->SMTPDebug = 0;  // kiểm tra lỗi : 1 là  hiển thị lỗi và thông báo cho ta biết, 2 = chỉ thông báo lỗi
                 $mail->SMTPAuth = true;  // bật chức năng đăng nhập vào SMTP này
                 $mail->SMTPSecure = 'ssl'; // sử dụng giao thức SSL vì gmail bắt buộc dùng cái này
+                $img = '';
+                $img_url = '';
+                for($i=0;$i<$max;$i++)
+                {
+                	
+                $id_sp=$_SESSION['cart'][$i]['productid'];
+					$soluong=$_SESSION['cart'][$i]['qty'];
+                					    $tenmathang=get_product_name($id_sp);
+                					    $hinhmathang=get_hinh($id_sp);
+                					    $pmota=get_mota($id_sp);
+                					    $pkodau=get_kodau($id_sp);
+                					    $psale=get_giagiam($id_sp);
+                					    $pma=get_masp($id_sp);
+                					$size= $_SESSION['size'.$id_sp];
+                					$mau= $_SESSION['mau'.$id_sp];
+                					if($psale ==0)
+                					    $giamathang=get_price($id_sp);
+                					else
+                					    $giamathang=get_giagiam($id_sp);
+                					$j=$i+1;
+                					$img = get_hinh($id_sp);
+                					$img_url = 'upload/sanpham/'.$img;
+                					$mail->AddEmbeddedImage($img_url, $id_sp,$img);
+                					$body .='<tr>
+						<td align="center" width="5%">'.$j.'</td>
+			
+						<td align="center">'.$pma.'</td>
+						<td align="center">'.$tenmathang.'</td>
+						<td align="center"><img src="cid:'.$id_sp.'"></td>
+						<td align="center">'. number_format ($giamathang,0,",",".").' VNĐ</td>
                 
+						<td align="center">'.$soluong.'</td>
+						<td align="center">'. number_format(($soluong*$giamathang),0,",",".").' VNĐ</td>
+						</tr>';
+                						
+                }
+                
+                $body .= '</table>';
                 $mail->Host = 'smtp.gmail.com';
                 $mail->Port = 465; 
                 $mail->Username = "nguyenleduykhang29111994@gmail.com";  
@@ -200,6 +200,8 @@
                 $mail->From = $from;		
                 
                 $mail->Subject = $subject;
+//                 $mail->AddEmbeddedImage($img_url, 'Kartka',$img);
+//                 $mail->Body = "<p>This is a test picture: <img src='cid:Kartka' /></p>";
                 $mail->Body = $body;
                 $mail->AddAddress($to);
                 

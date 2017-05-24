@@ -189,7 +189,11 @@ if($_REQUEST['command']=='delete' && $_REQUEST['pid']>0){
 			</td>
 			<td width="18%" align="center"><?php 
 			if($psale ==0) 
-			echo number_format(get_price($pid)*$q,0, ',', '.').'đ';
+			{
+			 echo number_format(get_price($pid)*$q,0, ',', '.').'đ';
+			}
+			else
+			    echo number_format($psale*$q,0, ',', '.').'đ';
 			
 			 ?>
 			</td>
