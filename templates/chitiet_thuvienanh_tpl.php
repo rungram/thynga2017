@@ -40,7 +40,7 @@
                     </h3>
                     <div class="image-container">
                         <a href="upload/thuvienanh/<?php echo $result_hinhanh[$i]["photo"];?>" target="_blank">
-                            <img class="img-responsive" src="upload/thuvienanh/<?php echo $result_hinhanh[$i]["photo"]; ?>" alt="<?=$result_hinhanh[$i]["thumb"]?>" alt="">
+                            <img class="img-responsive tva" src="upload/thuvienanh/<?php echo $result_hinhanh[$i]["photo"]; ?>" alt="<?=$result_hinhanh[$i]["thumb"]?>" alt="">
                         </a>
                     </div>
                 <div class="clearfix"></div>

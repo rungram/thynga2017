@@ -42,7 +42,7 @@
                     </h3>
                     <div class="image-container">
                         <a href="chi-tiet-anh/<?=$result_spnam[$i]['tenkhongdau']?>-<?=$result_spnam[$i]['id']?>.html">
-                            <img class="img-responsive" src="upload/thuvienanhcapcha/<?php echo $result_spnam[$i]["photo"]; ?>" alt="<?=$result_spnam[$i]["thumb"]?>" alt="">
+                            <img class="img-responsive tva" src="upload/thuvienanhcapcha/<?php echo $result_spnam[$i]["photo"]; ?>" alt="<?=$result_spnam[$i]["thumb"]?>" alt="">
                         </a>
                     </div>
                 <div class="clearfix"></div>

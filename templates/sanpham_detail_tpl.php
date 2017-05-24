@@ -65,7 +65,7 @@ if(isset($_GET['id']))
                 </div>
                 <div class="col-6">
                     <a href="#">
-                        <img class="img-responsive" src="upload/sanpham/<?php if($chitiet_sp["tc_big"]==1) echo $chitiet_sp["photo"]; else echo $chitiet_sp["photo"] ?>" alt="">
+                        <img class="img-responsive tva" src="upload/sanpham/<?php if($chitiet_sp["tc_big"]==1) echo $chitiet_sp["photo"]; else echo $chitiet_sp["photo"] ?>" alt="">
                     </a>
                 </div>
                 <div class="col-6">
@@ -73,7 +73,7 @@ if(isset($_GET['id']))
                         <?=$chitiet_sp['mota_vi']?>
                     </p>
                     <div class="down-arrow"></div>
-                    <button type="submit" name="do_submit" id="do_submit" class="btn" onClick="addtocart(<?=$chitiet_sp['id']?>)"  valign=""><span>Đặt hàng ngay</span>
+                    <button type="submit" name="do_submit" id="do_submit" class="read-more" onClick="addtocart(<?=$chitiet_sp['id']?>)"  valign=""><span class="read-more">Đặt hàng ngay</span>
                     </button>
                 </div>
                 <div class="clearfix"></div>
